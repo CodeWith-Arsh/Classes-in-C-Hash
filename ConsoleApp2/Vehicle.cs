@@ -1,4 +1,4 @@
-﻿using MyApplication;
+﻿/*using MyApplication;
 
 
 using System;
@@ -11,10 +11,11 @@ namespace MyApplication
 {
      class Vehicle
     {
-        public string brand;
+        public required string brand;
         public void honk()
             {
             Console.WriteLine("Hello");
         }
     }
 }
+*/
