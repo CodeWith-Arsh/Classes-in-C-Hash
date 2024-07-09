@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;  // include the System.IO namespace
 
 namespace MyApplication
 {
@@ -132,7 +133,7 @@ namespace MyApplication
         }
     }*/
 
-  //Interfaces
+    //Interfaces
     /* interface IFirstInterface
     {
         void myMethod(); //Interface Method
@@ -157,22 +158,57 @@ namespace MyApplication
         }
     }*/
 
-//Enums -Group of constants
-/*enum level
-    {
-        Low,
-        Medium, 
-        High
+    //Enums -Group of constants
+    /*enum level
+        {
+            Low,
+            Medium, 
+            High
 
-    }
+        }
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                level myVar = level.Low;
+                level myVar2 = level.Medium;
+                level myVar3 = level.High;
+                Console.WriteLine("This is "+myVar +" "+ myVar2 + "    "+ myVar3);
+            }
+        }*/
+
+    //C # Files
+
+    /*class Program
+    {
+        static void Main(string[] args) 
+        { 
+            string writeText = Console.ReadLine();
+            File.WriteAllText("ABC.txt",writeText);
+            string readText = File.ReadAllText("ABC.txt");
+            Console.WriteLine(readText);
+
+
+        }
+
+    }*/
+
+    //Exceptions
+
     class Program
     {
         static void Main(string[] args)
         {
-            level myVar = level.Low;
-            level myVar2 = level.Medium;
-            level myVar3 = level.High;
-            Console.WriteLine("This is "+myVar +" "+ myVar2 + "    "+ myVar3);
+            try
+            {
+                int[] myNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+                Console.WriteLine(myNumbers[5]);
+            }
+            catch (Exception ex) 
+            { 
+                Console.WriteLine(ex.Message);
+            }
+
         }
-    }*/
+    }
 }
